@@ -6,7 +6,7 @@ puts "loading gems..."
 gemfile do
   source "https://rubygems.org"
 
-  gem "http"
+  gem "http", "~> 4.4.1"
   gem "faraday"
   gem "httpi"
 
@@ -15,5 +15,7 @@ gemfile do
   gem "nokogiri" # im sorry
 end
 
-puts "gems loaded"
+puts "gems loaded:"
+puts "http.rb ver: #{HTTP::VERSION}"
+
 puts
